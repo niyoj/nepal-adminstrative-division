@@ -48,30 +48,30 @@ class AdminstrativeDivision {
         "makwanpur",//
         "chitwan",//
         "gorkha",//
-        "lamjung",
-        "tanahun",
-        "syangja",
-        "kaski",
-        "manang",
-        "mustang",
-        "myangdi",
-        "nawalpur",
-        "parbat",
-        "baglung",
-        "gulmi",
-        "palpa",
-        "parasi",
-        "rupandehi",
-        "kapilvastu",
-        "arghakhanchi",
-        "pyuthan",
-        "rolpa",
-        "eastern rukum",
-        "banke",
-        "bardiya",
-        "dang",
-        "western rukum",
-        "salyan",
+        "lamjung",//
+        "tanahun",//
+        "syangja",//
+        "kaski",//
+        "manang",//
+        "mustang",//
+        "myangdi",//
+        "nawalpur",//
+        "parbat",//
+        "baglung",//
+        "gulmi",//
+        "palpa",//
+        "parasi",//
+        "rupandehi",//
+        "kapilvastu",//
+        "arghakhanchi",//
+        "pyuthan",//
+        "rolpa",//
+        "eastern rukum",//
+        "banke",//
+        "bardiya",//
+        "dang",//
+        "western rukum",//
+        "salyan",//
         "surkhet",
         "dailekh",
         "jajarkot",
@@ -368,6 +368,120 @@ class AdminstrativeDivision {
         "rapti", //chitwan ends here
         "gorkha",
         "palungtar",//gorkha ends here
+        "besisahar",
+        "madhaya nepal",
+        "rainas",
+        "sundarbazar",//lamjung ends here
+        "bhanu",
+        "bhimad",
+        "byas",
+        "shuklagandaki"//tanahun ends here
+        "galyang",
+        "chapakot",
+        "putalibazar",
+        "bheerkot",
+        "waling", //syangja ends here
+        "beni", //myagdi ends here   
+        "kawasoti",
+        "gaindakot",
+        "devachuli",
+        "madhyabindu",//nawalpur ends here
+        "kushma",
+        "phalewas",//parbat ends here
+        "baglung",
+        "dhorpatan",
+        "galkot",
+        "jaimuni",//baglung ends here
+        "musikot",
+        "resunga",//gulmi ends here
+        "tansen",
+        "rampur",//palpa ends here
+        "bardghat",
+        "ramgram",
+        "sunwal",//parasi ends here
+        "devdaha",
+        "lumbini sanskritik",
+        "sainamaina",
+        "siddharthanagar",
+        "tilottama",//rupandehi ends here
+        "kapilvastu",
+        "banganga",
+        "buddhabhumi",
+        "shivaraj",
+        "krishnanagar",
+        "maharajgunj",//kapilvastu ends here
+        "sandhikharka",
+        "sitganga",
+        "bhumikasthan",//argakhanchi ends here
+        "pyuthan",
+        "swargadwari",//pyuthan ends here
+        "rolpa",//rolpa ends here
+        "kohalpur", //banke ends here
+        "gulariya",
+        "rajapur",
+        "madhuwan",
+        "thakurbaba",
+        "basgadhi",
+        "barbardiya",//bardiya ends here
+        "lamahi",//dang ends here
+        "musikot",
+        "chaurjahari",
+        "aathbiskot",//estern rukum ends here
+        "shaarda",
+        "bagchaur",
+        "bangad kupinde",//salyan ends here
+        "birendrangar",
+        "bheriganga",
+        "gurbha kot",
+        "pachapuri",
+        "lekbesi",//surkhet ends here
+        "bheri",
+        "chhedagad",
+        "nalgad",//jajrkot ends here
+        "narayan",
+        "dullu",
+        "aathbis",
+        "chamunda bindrasaini",//dailekh ends here
+        "thuli bheri",
+        "tripurasundari",//dolpa ends here
+        "chandannath",//jumla ends here
+        "khandachakra",
+        "raskot",
+        "tilagufa",//kalikot ends here
+        "chhayanath rara",//mugu ends here
+        "badimalika",
+        "triveni",
+        "budhiganga",
+        "budhinanda",//bajura ends here
+        "jaya prithivi",
+        "bungal", //bajhang ends here
+        "mangalsen",
+        "kamalbazar",
+        "sanfebagar",
+        "panchadewal binayak",//accham ends here
+        "dipayal silgadhi",
+        "shikhar",//doti ends here
+        "lamki chuha",
+        "tikapur",
+        "ghodaghodi",
+        "bhajani",
+        "godawari",
+        "gauriganga"//kailali ends here
+        "bedkot",
+        "belauri",
+        "bhimdatta",
+        "mahakali",
+        "shuklaphanta",
+        "krishnapur",
+        "punarbas",//kanchanpur ends here
+        "amargadhi",
+        "parshuram",//dadeldhura ends here
+        "dasharathchand",
+        "patan",
+        "melauli",
+        "purchaudi",//baitadi ends here
+        "mahakali",
+        "shaliyasikhar"//darchula ends here
     );
 
     $vdc = array(
@@ -631,16 +745,244 @@ class AdminstrativeDivision {
         "sahid lakhan",
         "aarughat",
         "gandaki", //gorkha ends here
-
-
-
-    );
+        "dordi",
+        "dudhpokhari",
+        "kwhlosothar",
+        "marsyandi",//lamjung ends here
+        "anbu khaireni",
+        "devghat",
+        "bandipur",
+        "rishing",
+        "ghiring",
+        "myagde",//tanahun ends here
+        "arjun chaupari",
+        "aandhikhola",
+        "kaligandaki",
+        "phedikhola",
+        "harinas",
+        "biruwa",//Syanja ends here
+        "annapurna",
+        "machhapuchchhre",
+        "madi",
+        "rupa",//kaski ends here
+        "chame",
+        "nason",
+        "narpa bhumi",
+        "manang ngisyang",//manang ends  here
+        "gharpajhong",
+        "thasang",
+        "barhagaun muktichhetra",
+        "lomanthang",
+        "lo-ghekar damodarkunda",//mustang ends here
+        "annapurna",
+        "dhaulagiri",
+        "mangala",
+        "malika",
+        "raghuganga",//myagdi ends here
+        "baudikali",
+        "bulingtar",
+        "binayi tribeni",
+        "hupsekot", //nawalpur ends here
+        "jaljala",
+        "paiyun",
+        "mahashila",
+        "modi",
+        "bihadi",//parbat ends here
+        "bareng",
+        "khathekhola",
+        "taman khola",
+        "tara khola",
+        "nisikhola",
+        "badigad",//baglung ends here        
+        "ishma",
+        "kaligandaki",
+        "gulmi darbar",
+        "satyawati",
+        "chandrakot",
+        "rurukshetra",
+        "chhatrakot",
+        "dhurkot",
+        "madane",
+        "malika",//gulmi ends here
+        "rainadevi",
+        "ripdikot",
+        "bagnaskali",
+        "rambha",
+        "purbakhola",
+        "nisdi",
+        "mathagadi",
+        "tinahu",//palpa ends here
+        "susta",
+        "palhinandan",
+        "pratappur",
+        "sarawal", //parasi ends here
+        "gaidahawa",
+        "kanchan",
+        "kotahimai",
+        "marchawari",
+        "mayadevi",
+        "omsatiya",
+        "rohini",
+        "sammarimai",
+        "siyari",
+        "suddodhan",//rupandehi ends here
+        "mayadevi",
+        "yashodhara",
+        "suddhodhan",
+        "bijaynagar",//kapilvastu ends here
+        "chhatradev",
+        "panini",
+        "malarani",//arghakhanchi ends here
+        "gaumukhi",
+        "mandwi",
+        "sarumarani",
+        "mallarani",
+        "naubahini",
+        "jhimruk",
+        "airawati",
+        "runtigadhi",
+        "triveni",
+        "lungri",
+        "sunchhahari",
+        "thabang",
+        "madi",
+        "gangadev",
+        "paribartan",//ropla ends here
+        "bhume",
+        "putha uttarganga",
+        "sisne",//eastern rukum ends here
+        "rapti-sonari",
+        "narainapur",
+        "duduwa",
+        "janaki",
+        "khajura",
+        "baijanath",//banke ends here
+        "badhaiyatal",
+        "geruwa",//bardiya ends here
+        "gadhawa",
+        "rajpur",
+        "shantinagar",
+        "rapti",
+        "banglachuli",
+        "dangisharan",
+        "babai",//dang ends here
+        "banphikot",
+        "tribeni",
+        "sani bheri",//rukum ends here
+        "kalimati",
+        "tribeni",
+        "kapurkot",
+        "chatreshwari",
+        "kumakh",
+        "siddha kumakh",
+        "darma",//slayan end here
+        "chaukune",
+        "barahatal",
+        "chingad",
+        "simta",//surkhet ends here
+        "thantikandh",
+        "bhairabi",
+        "mahabu"
+        "naumule",
+        "dungeshwar",
+        "gurans",
+        "bhagawatimai",//dailekh ends here
+        "junichande",
+        "kushe",
+        "barekot",
+        "shivalaya",//jajarkot ends here
+        "dolpo buddha",
+        "she phoksundo",
+        "jagadulla",
+        "mudkechula",
+        "kaike",
+        "chharka tangsong",//dolpa ends here
+        "kankasundari",
+        "sinja",
+        "hima",
+        "tila",
+        "guthichaur",
+        "tatopani",
+        "patarasi",//jumla ends here
+        "pachalijharna",
+        "sanni triveni",
+        "narharinath",
+        "shubha kalika",
+        "mahawai",
+        "plata",//kalikot ends here
+        "mugum karmarong",
+        "soru",
+        "khatyad",//mugu ends here
+        "simkot",
+        "namkha",
+        "kharpunath",
+        "sarkegad",
+        "chankheli",
+        "adanchuli",
+        "tajakot",//humla ends here
+        "gaumul",
+        "triveni",
+        "jagnnath",
+        "swamikartik",
+        "chhdedaha",
+        "himali",//bajura  ends  here
+        "talkot",
+        "masta",
+        "khaptadchhanna",
+        "thalara",
+        "bittadchir",
+        "surma",
+        "chhabis pathibhera",
+        "burgathali",
+        "kedarsyu",
+        "saipal",//bajhang ends here
+        "ramaroshan",
+        "chaurpati",
+        "turmakhand",
+        "mellekh",
+        "dhakari",
+        "bannigadi jayagad",//achham ends here
+        "purbichauki",
+        "badikedar",
+        "jorayal",
+        "sayal",
+        "aadarsha",
+        "dr ki singh",
+        "bogatan",//doti ends her
+        "janaki",
+        "bardagoriya",
+        "mohanyal",
+        "kailari",
+        "joshipur",
+        "chure",//kailali ends here
+        "laljhadi",
+        "beldandi",//kanchanpur ends here
+        "aalitaal",
+        "bhageshwar",
+        "navadurga",
+        "ajaymeru",
+        "ganyapadhura",//dadeldhura ends here
+        "sunarya",
+        "sigas",
+        "shivnath",
+        "pancheshwor",
+        "dogdakedar",
+        "dilasaini",//baitadi ends here
+        "malikarjun",
+        "apihimal",
+        "duhun",
+        "naugad",
+        "marma",
+        "lekam",
+        "vyans"//darchula ends here
+    );  
 
     $metropolitian = array(
         "biratnagar", //morang ends here
         "lalitpur", //lalitpur ends here
         "kathmandu", //kathmandu ends here
         "bharatpur", //chitwan ends here
+        "pokhara", //kasku ends here
     );
 
     $sub_metropolitian = array(
@@ -651,7 +993,11 @@ class AdminstrativeDivision {
         "jeetpur simara",//bara  ends here
         "birgunj",//parsa ends here
         "hetauda", //makwanpur ends here
-
+        "butwal", //rupandehi ends here
+        "nepalgunj", //banke ends here
+        "ghorahi",
+        "tulsipur",//dang ends  here
+        "dhangadhi"//kailali ends here
     );
 }
 
