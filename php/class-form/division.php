@@ -34,20 +34,20 @@ class AdminstrativeDivision {
         "bara",//
         "parsa",//
         "rautahat",//
-        "sindhuli",
-        "ramechhap",
-        "dolakha",
-        "sindhupalchok",
-        "kavrepalanchok",
-        "lalitpur",
-        "bhaktapur",
-        "kathmandu",
-        "nuwakot",
-        "rasuwa",
-        "dhading",
-        "makwanpur",
-        "chitwan",
-        "gorkha",
+        "sindhuli",//
+        "ramechhap",//
+        "dolakha",//
+        "sindhupalchok",//
+        "kavrepalanchok",//
+        "lalitpur",//
+        "bhaktapur",//
+        "kathmandu",//
+        "nuwakot",//
+        "rasuwa",//
+        "dhading",//
+        "makwanpur",//
+        "chitwan",//
+        "gorkha",//
         "lamjung",
         "tanahun",
         "syangja",
@@ -324,8 +324,50 @@ class AdminstrativeDivision {
         "phatuwa bijayapur",
         "rajdevi",
         "rajpur", //rauthata ends here
-
-
+        "manthali",
+        "ramechhap" //ramechhap ends here
+        "kamalamai",
+        "dudhauli", //sindhuli ends here
+        "bhimeswor",
+        "jiri", //dolakha ends here
+        "chautara sangachowkgadi",
+        "bahrabise",
+        "melamchi", //sindhupalchok ends here
+        "dhulikhel",
+        "banepa",
+        "panauti",
+        "panchkhal",
+        "namobuddha",
+        "mandandeupur", //kavrepalanchok ends here
+        "konjyoson",
+        "bagmati",
+        "mahankal", //lalitpur ends here
+        "bhaktapur",
+        "changunarayan",
+        "madhyapur thimi",
+        "suryabinayak", //bhaktapur ends here
+        "budanilakantha",
+        "chandragiri",
+        "dakshinkali",
+        "gokarneshwar",
+        "kageshwari manohara",
+        "kirtipur",
+        "nagarjun",
+        "shankharapur",
+        "tarakeshwar",
+        "tokha", //kathmandu ends here
+        "bidur",
+        "belkotgadhi", //nuwakot ends here
+        "dhunibeshi",
+        "nilkantha", //dhading ends here
+        "thaha", //makwanpur ends here
+        "kalika",
+        "khairahani",
+        "madi",
+        "ratnanagar",
+        "rapti", //chitwan ends here
+        "gorkha",
+        "palungtar",//gorkha ends here
     );
 
     $vdc = array(
@@ -507,10 +549,98 @@ class AdminstrativeDivision {
         "thori", //parsa ends here
         "durga bhagwati",
         "yamunamai", //rautahat ends here
+        "umakunda",
+        "khandadevi",
+        "gokulganga",
+        "doramba",
+        "likhu",
+        "sunapati", //ramechhap ends here
+        "sunkoshi",
+        "hariharpur gadhi",
+        "tinpatan",
+        "marin",
+        "golanjor",
+        "phikkal",
+        "ghyanglekh", //sindhuli ends here
+        "kalinchok",
+        "melung",
+        "bigu",
+        "gaurishankar",
+        "baiteshwor",
+        "sailung",
+        "tamakoshi", //dolakha ends here
+        "balephi",
+        "sunkoshi",
+        "indrawati",
+        "jugal",
+        "panchpokhari thangpal",
+        "bhotekoshi",
+        "lisankhu",
+        "helambu",
+        "tripurasundari", //sindhupalchok ends here
+        "khani khola",
+        "chauri deurali",
+        "temal",
+        "bethanchok",
+        "bhumlu",
+        "mahabharat",
+        "roshi", //kavreplanchok ends here
+        "mahalaxmi",
+        "godawari", //lalitpur ends here
+        "kakani",
+        "panchakanya",
+        "likhu",
+        "dupcheshwar",
+        "shivapuri",
+        "tadi",
+        "suryagadhi",
+        "tarkeshwar",
+        "kispang",
+        "myagang", //nuwakot ends here
+        "uttargaya",
+        "kalika",
+        "gosaikunda",
+        "naukunda",
+        "aamachhodingmo", //rasuwa ends here
+        "khaniyabas",
+        "gajuri",
+        "galchhi",
+        "hangajamuna",
+        "jwalamukhi",
+        "thakre",
+        "netrawati dabjong",
+        "benighar rorang",
+        "rubi valley",
+        "siddhalek",
+        "tripurasundari", //dhading ends here
+        "bhimpedi",
+        "makawanpurgadhi",
+        "manahari",
+        "raksirang",
+        "bakaiya",
+        "bagmati",
+        "kailash",
+        "indrasarowar", //makwanpr ends here
+        "ichchhakamana", //chitwan ends here
+        "sulikot",
+        "siranchowk",
+        "ajirkot",
+        "tsum nubri",
+        "dharche",
+        "bhimsen thapa",
+        "sahid lakhan",
+        "aarughat",
+        "gandaki", //gorkha ends here
+
+
+
     );
 
     $metropolitian = array(
         "biratnagar", //morang ends here
+        "lalitpur", //lalitpur ends here
+        "kathmandu", //kathmandu ends here
+        "bharatpur", //chitwan ends here
     );
 
     $sub_metropolitian = array(
@@ -520,6 +650,7 @@ class AdminstrativeDivision {
         "kalaiya",
         "jeetpur simara",//bara  ends here
         "birgunj",//parsa ends here
+        "hetauda", //makwanpur ends here
 
     );
 }
