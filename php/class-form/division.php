@@ -12,66 +12,66 @@ class AdminstrativeDivision {
     );
 
     public $district = array(
-        "taplejung",//
-        "panchthar",//
-        "ilam",//
-        "jhapa",//
-        "morang",//
-        "sunsari",//
-        "dhankuta", //
-        "terhathum",//
-        "sankhuwasabha",//
-        "bhojpur",//
-        "solukhumbu",//
-        "okhaldhunga",//
-        "khotang",//
-        "udayapur",//
-        "spatari",//
-        "siraha",//
-        "dhanusha",//
-        "mahottari",//
-        "sarlahi",//
-        "bara",//
-        "parsa",//
-        "rautahat",//
-        "sindhuli",//
-        "ramechhap",//
-        "dolakha",//
-        "sindhupalchok",//
-        "kavrepalanchok",//
-        "lalitpur",//
-        "bhaktapur",//
-        "kathmandu",//
-        "nuwakot",//
-        "rasuwa",//
-        "dhading",//
-        "makwanpur",//
-        "chitwan",//
-        "gorkha",//
-        "lamjung",//
-        "tanahun",//
-        "syangja",//
-        "kaski",//
-        "manang",//
-        "mustang",//
-        "myangdi",//
-        "nawalpur",//
-        "parbat",//
-        "baglung",//
-        "gulmi",//
-        "palpa",//
-        "parasi",//
-        "rupandehi",//
-        "kapilvastu",//
-        "arghakhanchi",//
-        "pyuthan",//
-        "rolpa",//
-        "eastern rukum",//
-        "banke",//
-        "bardiya",//
-        "dang",//
-        "western rukum",//
-        "salyan",//
+        "taplejung",
+        "panchthar",
+        "ilam",
+        "jhapa",
+        "morang",
+        "sunsari",
+        "dhankuta",
+        "terhathum",
+        "sankhuwasabha",
+        "bhojpur",
+        "solukhumbu",
+        "okhaldhunga",
+        "khotang",
+        "udayapur",//province 1 ends here
+        "spatari",
+        "siraha",
+        "dhanusha",
+        "mahottari",
+        "sarlahi",
+        "bara",
+        "parsa",
+        "rautahat",//province 2 ends here
+        "sindhuli",
+        "ramechhap",
+        "dolakha",
+        "sindhupalchok",
+        "kavrepalanchok",
+        "lalitpur",
+        "bhaktapur",
+        "kathmandu",
+        "nuwakot",
+        "rasuwa",
+        "dhading",
+        "makwanpur",
+        "chitwan",//bagmati province ends here
+        "gorkha",
+        "lamjung",
+        "tanahun",
+        "syangja",
+        "kaski",
+        "manang",
+        "mustang",
+        "myangdi",
+        "nawalpur",
+        "parbat",
+        "baglung",//gandaki province ends here
+        "gulmi",
+        "palpa",
+        "parasi",
+        "rupandehi",
+        "kapilvastu",
+        "arghakhanchi",
+        "pyuthan",
+        "rolpa",
+        "eastern rukum",
+        "banke",
+        "bardiya",
+        "dang",//lumbini ends here
+        "western rukum",
+        "salyan",
         "surkhet",
         "dailekh",
         "jajarkot",
@@ -79,7 +79,7 @@ class AdminstrativeDivision {
         "jumla",
         "kalikot",
         "mugu",
-        "humla",
+        "humla", //karnali ends here
         "bajura",
         "bajhang",
         "achham",
@@ -88,7 +88,7 @@ class AdminstrativeDivision {
         "kanchanpur",
         "dadeldhura",
         "baitadi",
-        "darchula"
+        "darchula"//sudurpashchim ends here
     );
 
     public $zone = array(
@@ -982,7 +982,7 @@ class AdminstrativeDivision {
         "lalitpur", //lalitpur ends here
         "kathmandu", //kathmandu ends here
         "bharatpur", //chitwan ends here
-        "pokhara", //kasku ends here
+        "pokhara" //kasku ends here
     );
 
     public $sub_metropolitian = array(
@@ -1029,6 +1029,36 @@ class AdminstrativeDivision {
             asort($zone_array, "SORT_STRING");
         }
         return $zone_array;
+    }
+
+    public function list_district($province_req = "all", $sort = false) {
+        $province_array = $this->province;
+        $district_array = $this->district;
+
+        if($province_req == "all") {
+           ($sort)? asort($district_array);
+           return $district_array; 
+        }
+
+        if(!in_array(strtolower($province_req), $province_array)) {
+            return false;
+        }
+
+        $province_req = array_search($province_req, $province_array);
+        $query = array("taplejung", "udayapur", "rautahat", "chitwan", "baglung", "dang", "humla", "darchula");
+        $return_array = array();
+
+        foreach($district_array as $district) {
+            $push_status = ($district == $query[$province_req])?true: false;
+
+            if($push_status) {
+                array_push($return_array, $district);
+            }
+
+            $push_status = ($district == $query[$province_req+1])? false: true;
+        }
+
+        return $return_array;
     }
 }
 
