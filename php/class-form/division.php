@@ -1,7 +1,7 @@
 <?php
 
 class AdminstrativeDivision {
-    $province = array(
+    public $province = array(
         "province no. 1",
         "province no. 2",
         "bagmati",
@@ -11,7 +11,7 @@ class AdminstrativeDivision {
         "sudurpaschim"
     );
 
-    $district = array(
+    public $district = array(
         "taplejung",//
         "panchthar",//
         "ilam",//
@@ -91,7 +91,7 @@ class AdminstrativeDivision {
         "darchula"
     );
 
-    $zone = array(
+    public $zone = array(
         "mechi",
         "koshi",
         "sagarmatha",
@@ -108,7 +108,7 @@ class AdminstrativeDivision {
         "mahakali"
     );
 
-    $provinceHQ = array(
+    public $provinceHQ = array(
         "biratnagar",
         "jankpur",
         "hetauda",
@@ -118,7 +118,7 @@ class AdminstrativeDivision {
         "dhangadhi"
     );
 
-    $districtHQ = array(
+    public $districtHQ = array(
         "taplejung",
         "phidim",
         "ilam",
@@ -198,7 +198,7 @@ class AdminstrativeDivision {
         "api"
     );
 
-    $zoneHQ = array(
+    public $zoneHQ = array(
         "ilam",
         "biratnagar",
         "rajbiraj",
@@ -215,7 +215,7 @@ class AdminstrativeDivision {
         "mahendranagar"
     ); 
 
-    $municipality = array(
+    public $municipality = array(
         "phungling", //taplejung ends here
         "phidim", //panchthar ends here
         "ilam",
@@ -484,7 +484,7 @@ class AdminstrativeDivision {
         "shaliyasikhar"//darchula ends here
     );
 
-    $vdc = array(
+    public $vdc = array(
         "aathrai tribeni",
         "sidingwa",
         "phaktanglung",
@@ -977,7 +977,7 @@ class AdminstrativeDivision {
         "vyans"//darchula ends here
     );  
 
-    $metropolitian = array(
+    public $metropolitian = array(
         "biratnagar", //morang ends here
         "lalitpur", //lalitpur ends here
         "kathmandu", //kathmandu ends here
@@ -985,7 +985,7 @@ class AdminstrativeDivision {
         "pokhara", //kasku ends here
     );
 
-    $sub_metropolitian = array(
+    public $sub_metropolitian = array(
         "itahari",
         "dharan", //sunsari ends here
         "janakpur", //dhanusha ends here
@@ -999,6 +999,37 @@ class AdminstrativeDivision {
         "tulsipur",//dang ends  here
         "dhangadhi"//kailali ends here
     );
+
+    private function __construct() {
+
+    }
+
+    public function list_province($sort = false) {
+        $province_array = $this->province;
+
+        if($sort) {
+            asort($province_array, "SORT_STRING");
+        }
+        return $province_array;
+    }
+
+    public function list_province_hq($sort = false) {
+        $province_hq = $this->provinceHQ;
+
+        if($sort) {
+            asort($province_hq, "SORT_STRING");
+        }
+        return $province_hq;
+    }
+
+    public function list_zone($sort = false) {
+        $zone_array = $this->$zone;
+
+        if($sort) {
+            asort($zone_array, "SORT_STRING");
+        }
+        return $zone_array;
+    }
 }
 
 ?>
