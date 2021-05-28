@@ -1,9 +1,9 @@
 <?php
 
-class AdminstrativeDivision {
+class AdminstrativeDivison {
     public $province = array(
-        "province no. 1",
-        "province no. 2",
+        "province1",
+        "province2",
         "bagmati",
         "gandaki",
         "lumbini",
@@ -26,7 +26,7 @@ class AdminstrativeDivision {
         "okhaldhunga",
         "khotang",
         "udayapur",//province 1 ends here
-        "spatari",
+        "saptari",
         "siraha",
         "dhanusha",
         "mahottari",
@@ -325,7 +325,7 @@ class AdminstrativeDivision {
         "rajdevi",
         "rajpur", //rauthata ends here
         "manthali",
-        "ramechhap" //ramechhap ends here
+        "ramechhap", //ramechhap ends here
         "kamalamai",
         "dudhauli", //sindhuli ends here
         "bhimeswor",
@@ -375,7 +375,7 @@ class AdminstrativeDivision {
         "bhanu",
         "bhimad",
         "byas",
-        "shuklagandaki"//tanahun ends here
+        "shuklagandaki",//tanahun ends here
         "galyang",
         "chapakot",
         "putalibazar",
@@ -466,7 +466,7 @@ class AdminstrativeDivision {
         "ghodaghodi",
         "bhajani",
         "godawari",
-        "gauriganga"//kailali ends here
+        "gauriganga",//kailali ends here
         "bedkot",
         "belauri",
         "bhimdatta",
@@ -499,7 +499,7 @@ class AdminstrativeDivision {
         "phalelung",
         "phalgunanda",
         "tumbewa",
-        "yangawarak"//panchthar ends here
+        "yangawarak",//panchthar ends here
         "phakphokthum",
         "mai jogmai",
         "chulachuli",
@@ -520,7 +520,7 @@ class AdminstrativeDivision {
         "gramthan",
         "katahari",
         "dhanpalthan",
-        "jahada" //morang ends here
+        "jahada", //morang ends here
         "koshi",
         "gadhi",
         "barju",
@@ -601,7 +601,7 @@ class AdminstrativeDivision {
         "thoksela",
         "thulachhap",
         "ubu",
-        "yasam"//okhaldhunga ends here
+        "yasam",//okhaldhunga ends here
         "khotehang",
         "diprung",
         "aiselukharka",
@@ -622,7 +622,7 @@ class AdminstrativeDivision {
         "mahadeva",
         "rupani",
         "tilathi koiladi",
-        "tirhut" //saptari ends here
+        "tirhut", //saptari ends here
         "bhagwanpur",
         "aurahi",
         "bishnupur",
@@ -882,7 +882,7 @@ class AdminstrativeDivision {
         "simta",//surkhet ends here
         "thantikandh",
         "bhairabi",
-        "mahabu"
+        "mahabu",
         "naumule",
         "dungeshwar",
         "gurans",
@@ -1000,34 +1000,24 @@ class AdminstrativeDivision {
         "dhangadhi"//kailali ends here
     );
 
-    private function __construct() {
-
-    }
-
     public function list_province($sort = false) {
         $province_array = $this->province;
 
-        if($sort) {
-            asort($province_array, "SORT_STRING");
-        }
+        ($sort)? asort($province_array): false;
         return $province_array;
     }
 
     public function list_province_hq($sort = false) {
         $province_hq = $this->provinceHQ;
 
-        if($sort) {
-            asort($province_hq, "SORT_STRING");
-        }
+        ($sort)? asort($province_hq): false;
         return $province_hq;
     }
 
     public function list_zone($sort = false) {
-        $zone_array = $this->$zone;
+        $zone_array = $this->zone;
 
-        if($sort) {
-            asort($zone_array, "SORT_STRING");
-        }
+        ($sort)? asort($zone_array): false;
         return $zone_array;
     }
 
@@ -1036,7 +1026,7 @@ class AdminstrativeDivision {
         $district_array = $this->district;
 
         if($province_req == "all") {
-           ($sort)? asort($district_array);
+           ($sort)? asort($district_array): false;
            return $district_array; 
         }
 
@@ -1046,16 +1036,21 @@ class AdminstrativeDivision {
 
         $province_req = array_search($province_req, $province_array);
         $query = array("taplejung", "udayapur", "rautahat", "chitwan", "baglung", "dang", "humla", "darchula");
-        $return_array = array();
-
+        $return_array = ($province_req == 0)? array("taplejung"): array();
+        
         foreach($district_array as $district) {
-            $push_status = ($district == $query[$province_req])?true: false;
-
-            if($push_status) {
-                array_push($return_array, $district);
+            if(isset($push_status)) {
+                ($push_status)? array_push($return_array, $district): false;
+            } else {
+                $push_status= false;
             }
 
-            $push_status = ($district == $query[$province_req+1])? false: true;
+            if($district == $query[$province_req+1]) {
+                break;
+            }
+            if(empty($push_status)) {
+                $push_status = ($district == $query[$province_req])?true: false;
+            }
         }
 
         return $return_array;
