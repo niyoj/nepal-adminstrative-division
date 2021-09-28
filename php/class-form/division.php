@@ -98,23 +98,6 @@ class AdminstrativeDivison {
         "darchula"
     );
 
-    public $zone = array(
-        "mechi",
-        "koshi",
-        "sagarmatha",
-        "janakpur",
-        "bagmati",
-        "narayani",
-        "gandaki",
-        "lumbini",
-        "dhaulagiri",
-        "rapti",
-        "karnali",
-        "bheri",
-        "seti",
-        "mahakali"
-    );
-
     public $provinceHQ = array(
         "biratnagar",
         "jankpur",
@@ -204,23 +187,6 @@ class AdminstrativeDivison {
         "daharathchand",
         "api"
     );
-
-    public $zoneHQ = array(
-        "ilam",
-        "biratnagar",
-        "rajbiraj",
-        "janakpur dham",
-        "kathmandu",
-        "hetauda",
-        "pokhara",
-        "baglung",
-        "butwal",
-        "tulsipur",
-        "nepalgunj",
-        "jumla",
-        "dhangadi",
-        "mahendranagar"
-    ); 
 
     public $municipality = array(
         "phungling", //taplejung ends here
@@ -1021,17 +987,6 @@ class AdminstrativeDivison {
         return $province_hq;
     }
 
-    public function list_zone($province_req = "all", $sort = false) {
-        $zone_array = $this->zone;
-        
-        if($province_array == "all") { 
-            ($sort)? asort($zone_array): false;
-            return $zone_array;
-        }
-
-        $query = array();//district frm zone get, //province district //district intersetn vaako zone
-    }
-
     public function list_district($province_req = "all", $sort = false) {
         $province_array = $this->province;
         $district_array = $this->district;
@@ -1066,22 +1021,6 @@ class AdminstrativeDivison {
 
         ($sort)? asort($return_array): false;
         return $return_array;
-    }
-
-    public function list_district_zone($zone_req = "all", $sort = false) {
-        $zone_array = $this->zone;
-        $district_array = $this->district;
-
-        if($zone_req == "all") {
-           ($sort)? asort($zone_array): false;
-           return $zone_array; 
-        }
-
-        if(!in_array(strtolower($zone_req), $zone_array)) {
-            return false;
-        }        
-
-        $query = array("taplejung", "jhapa", "bhojpur", "siraha", "bangad kupinde", "lekbesi", "nalgad", "chamunda bindrasaini", "tripurasundari", "chandannath", "tilagufa", "chhayanath rara", "budhinanda", "bungal", "panchadewal binayak", "shikhar", "gauriganga", "punarbase", "parshuram","purchaudi", "shaliyasikhar");
     }
 
     public function list_municipality($district_req = "all", $sort = false) {
